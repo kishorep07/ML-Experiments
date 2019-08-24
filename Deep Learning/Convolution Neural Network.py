@@ -1,4 +1,6 @@
 """
+*************DATASET TOO LARGE TO UPLOAD, AQUIRE CATS VS DOGS DATASET FROM KAGGLE************
+
 Convolutional Neural Networks
 Works with the digital rep of image (RGB / BW)
 Steps: Convolution, Max Pooling, Flattening, Full Connection
