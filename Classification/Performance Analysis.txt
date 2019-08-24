@@ -1,0 +1,29 @@
+##False Positives & Negatives
+False: Wrong Prediction
+Positive: Will Occur, Negative: Won't Occur
+
+##Confusion Matrix
+Top: Predicted(y^), Side: Actual(y)
+(0,1): False Positive
+(1,0): False Negative
+
+Acc Rate = Correct / Total
+Err Rate = Wrong / Total
+
+##Accuracy Paradox
+Sometimes abandoning a model (always 1) can actually inc Acc Rate. Thats why should not only use acc rate
+
+##CAP (Cumulative Acc Profile) Curve [Not same as ROC]
+One Line splits graph in half, which rep 0.5 prob (random)
+Area b/w line and CAP curve shows how good model is (ap)
+Cyrstal ball - best case scenario. (ar)
+Curve under line, very bad model
+
+##CAP Analysis:
+AR = ar/ap
+Simple Method - See the Y val for X=50%
+	X < 60%			Rubbish
+	60% < X < 70%	Poor
+	70% < X < 80%	Good
+	80% < X < 90%	Very Good
+	90% < X < 100%	Too Good (careful for overfitting)
